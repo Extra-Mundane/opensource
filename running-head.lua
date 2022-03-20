@@ -34,7 +34,11 @@ end
 end
 
 else
-game:GetService("Workspace").Coin.CFrame = game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame
+for i,v in pairs(game:GetService("Workspace"):GetDescendants()) do
+    if v:IsA("Part") and v.Name == "Coin" then
+        v.CFrame = game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame
+    end
+end
 wait()
 for a,b in pairs(game:GetService("Workspace").Folder:GetDescendants()) do
 if b:IsA("Part") and b.Name == "Tele" and b.BrickColor.Name ~= "Pastel light blue" then
