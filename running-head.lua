@@ -1,7 +1,7 @@
 repeat
 wait()
 until game:IsLoaded()
-wait(2) -- script stops sometimes even after game:IsLoaded()
+wait(3.5) -- script stops sometimes even after game:IsLoaded()
 
 if game.PlaceId == 6205205961 then
 game:GetService("Workspace").Folder.Coin.CFrame = game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame
