@@ -105,7 +105,7 @@ ImageButton.Image = "http://www.roblox.com/asset/?id=6035047409"
 
 local InsideLib = {}
 
-function InsideLib:Button(name)
+function InsideLib:Button(button)
 local Frame = Instance.new("Frame")
 local UICorner = Instance.new("UICorner")
 local UIGradient = Instance.new("UIGradient")
@@ -131,7 +131,7 @@ TextButton.Position = UDim2.new(0.0312056486, 0, 0.0836129338, 0)
 TextButton.Size = UDim2.new(0, 140, 0, 29)
 TextButton.ZIndex = 110
 TextButton.Font = Enum.Font.GothamBold
-TextButton.Text = name
+TextButton.Text = button
 TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextButton.TextSize = 14.000
 
